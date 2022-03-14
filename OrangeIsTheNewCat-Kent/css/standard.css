@@ -1,0 +1,191 @@
+html, body {
+	font-family: Montserrat, sans-serif;
+	font-size: x-large;
+}
+
+html {
+    	/* scroll-behavior: smooth; */
+
+}
+body {
+	margin: 0;
+    
+}
+
+h1, h2 {
+	padding-left: 2vw;
+	margin: 0;
+	z-index: 2;
+}
+
+h1 {
+	font-size: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+}
+
+h2 {
+	font-size: 1.25em;
+	position: fixed;
+	top: 10vh;
+	left: 0;
+	padding-top: .5em;
+	text-shadow: .05em .05em .05em white;
+}
+
+article {
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#home {
+	background-image: url('../images/playful-kitten-6683.jpg');
+}
+
+#about {
+	background-image: url('../images/kitten-flying.jpg');
+	background-position: center;
+}
+
+#about > div {
+    position: absolute;
+    top: 15vh;
+    left: 20ch;
+    width: 30vw;
+    text-shadow: .05em .05em .05em white;
+}
+
+.spin {
+    transform: rotateY(0);
+    transition: transform 1s;
+}
+
+.spin:hover {
+    transform: rotateY(360deg);
+}
+
+.hilite {
+	color: orange;
+	text-shadow: 0.05em 0.05em 0.025em #404040;
+}
+
+h2 > img {
+	vertical-align: middle;
+	height: 1em;
+}
+
+nav {
+	position: fixed;
+	bottom: 1em;
+	right: 0.5em;
+	font-size: 1.25rem;
+	z-index: 2;
+}
+
+nav > a {
+	text-decoration: none;
+	margin-right: .5em;
+	display: inline-block;
+	vertical-align: bottom;
+	transition: padding-bottom 0.25s;
+}
+
+a:hover {
+	padding-bottom: .5em;
+}
+
+#pawprint {
+	position: absolute;
+	bottom: -0.3em;
+	left: -100vw;
+	transition: left 0.25s;
+	height: 4vh;
+	z-index: -1;
+}
+
+#contact-popup div {
+	display: flex;
+	align-items: center;
+}
+
+#contact-popup > div > * {
+    color: orange;
+    margin: .5em;
+}
+
+#contact-popup {
+	position: fixed;
+	left: -100vw;
+	top: 50%;
+	transform: translateY(-50%) rotateZ(0);
+	background-color: rgba(0,0,0,.8);
+	color: orange;
+	padding: 1em;
+	border-radius: 0.5em;
+	border: 3px ridge orange;
+	font-size: 1em;
+	transition: all 1s;
+}
+
+.show-contact {
+    left: 50% !important;
+    transform: translate(-50%, -50%) rotateZ(720deg) !important;    
+}
+
+#schedule-popup {
+	display: none;
+	max-height: 60%;
+	max-width: 60%;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0,0,0,.8);
+	color: orange;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	border: 3px ridge orange;
+	font-size: 0.9em;
+}
+
+.close {
+	position: absolute;
+	right: -2vh;
+	top: -2vh;
+	width: 4vh;
+	height: 4vh;
+	cursor: pointer;
+}
+
+td {
+	vertical-align: top;
+	padding-left: 0.25em;
+}
+
+/*
+a:nth-child(1):hover ~ #pawprint {
+    left: calc(2.5ch - 2vh);
+    opacity: 1;
+}
+
+a:nth-child(2):hover ~ #pawprint {
+    left: calc(4ch + 3.5ch + .5em - 2vh);
+    opacity: 1;
+}
+
+a:nth-child(3):hover ~ #pawprint {
+    left: calc(9ch + 5ch + 1em - 2vh);
+    opacity: 1;
+}
+
+a:nth-child(4):hover ~ #pawprint {
+    left: calc(17ch + 4ch + 1.5em - 2vh);
+    opacity: 1;
+}
+*/

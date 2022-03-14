@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            iTunes Gifts<br>Music Survey
+        </h1>
+
+        <p>Congratulations! You are one step away from your $100 iTunes giftcard!
+            Just complete the following survey and you will qualify!
+        </p><br>
+
+        <p>
+            Completing the following survey will enable us to customize the music offers
+            we send you each week. Please be assured that your information will be kept 
+            private and will not be shared with any other organization.
+        </p><br>
+    </header>
+    <form method="post" action="https://www.mccinfo.net/webresources/cgibin">
+        <p>
+            <label for="fname" class="enterinfo">First Name:<input type="text" id="fname" required></label></p><br>
+        <p>
+            <label for="lname" class="enterinfo">First Name:<input type="text" id="lname" required></label>
+        </p><br>
+        <p>
+            <label for="email" class="enterinfo">Email <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+            </label>
+        </p><br>
+
+        <fieldset>
+            <legend>Select your favorite types of music:</legend>
+            <input type="checkbox" name="pop" id="pop" value="yes"><label for="pop"><span><span></span></span>Pop</label><br>
+            <input type="checkbox" name="classical" id="classical" value="yes"><label for="classical"><span><span></span></span>Classical</label><br>
+            <input type="checkbox" name="rock" id="rock" value="yes"><label for="rock"><span><span></span></span>Rock</label><br>
+            <input type="checkbox" name="folk" id="folk" value="yes"><label for="folk"><span><span></span></span>Folk</label><br>
+            <input type="checkbox" name="rap" id="rap" value="yes"><label for="rap"><span><span></span></span>Rap</label><br>
+            <input type="checkbox" name="other" id="other" value="yes"><label for="other"><span><span></span></span>other</label><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Select how often you purchase music CDs</legend>
+            <input type="radio" name="purchfreq" id="purchweekly" label="weekly"><label for="purchweekly"><span><span></span></span>Weekly</label><br>
+            <input type="radio" name="purchfreq" id="purchmonthly" label="monthly"><label for="purchmonthly"><span><span></span></span>Monthly</label><br>
+            <input type="radio" name="purchfreq" id="purchfew" label="few"><label for="purchfew"><span><span></span></span>Purchase a few</label><br>
+            <input type="radio" name="purchfreq" id="purchnever" label="never"><label for="purchnever"><span><span></span></span>Never purchase</label><br>
+            </fieldset><br>
+
+            <p>
+                Select the method you use most often to purchase music: <br>
+                <Select size="1" name="accesstype" id="accesstype">
+                    <option value="empty"></option>
+                    <option value="Online">Online</option>
+                    <option value="Retail Store">Retail Store</option>
+                    <option value="Other">Other</option>
+                </Select>
+            </p><br>
+
+        <p>
+            What role does music play in your life?<br>
+        
+            <textarea name="comments" cols="60" rows="5"></textarea>
+        </p>
+
+        <div>
+            <input type="submit" id="mySubmit" value="Submit">
+            <input type="reset" id="myReset" value="Clear Form">
+        </div><br>
+
+        <input type="hidden" name="recipient" value="katie.rylee14@gmail.com">
+        <input type="hidden" name="subject" value="Music Survey">
+        <input type="hidden" name="return_link_url" value="https://student.mccinfo.net`dtarvin/module7/Music_survey.html">
+        <input type="hidden" name="return_link_title" value="Return to Survey">
+        <input type="hidden" name="background" value="vector-spekER-1680x1050.jpg">
+        <input type="hidden" name="bgcolor" value="black">
+        <input type="hidden" name="text_color" value="white">
+        <input type="hidden" name="font_face" value="Times New Roman">
+        <input type="hidden" name="font_size" value="2em">
+    </form>
+
+    <footer>
+        <a href="mailto:katie.rylee14@gmail.com">Katie.Rylee14@gmail.com</a>
+    </footer>
+</body>
+</html>

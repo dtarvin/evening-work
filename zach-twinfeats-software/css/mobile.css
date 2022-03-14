@@ -1,0 +1,153 @@
+html {
+    font-size: xx-large;
+}
+
+#mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0.5em;
+    left: 0.5em;
+    height: 5vh;
+    width: 5vh;
+    z-index: 10;
+    padding: 0;
+}
+
+#mobile-nav > img {
+    width: 100%;
+}
+
+#nav:target {
+    width: 12ch;
+    height: 7em;
+    padding: 0.2em;
+}
+
+nav {
+    flex-direction: column;
+    top: calc(5vh + 0.5em);
+    width: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav > a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+nav > a:first-child {
+    padding-top: 0.5em
+}
+
+nav > a:last-child {
+    padding-bottom: 0.5em
+}
+
+.logo {
+    width: 40vw;
+    height: auto;
+}
+
+article {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.vertical-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tagline {
+    white-space: nowrap;
+}
+
+#bonus {
+    display: block;
+    margin-top: 3em;
+}
+
+.stage .cube {
+    width: 60vw;
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    animation-delay: 3s;
+}
+
+.photobox img {
+    height: 60vw;
+    width: 60vw;
+    left: 50%;
+}
+
+.stage .front {
+    transform: translateX(-50%) translateZ(30vw);
+}
+
+.stage .back {
+    transform: translateX(-50%) rotateY(180deg) translateZ(30vw);
+}
+
+.stage .top {
+    transform: translateX(-50%) rotateX(90deg) translateZ(30vw);
+}
+
+.stage .bottom {
+    transform: translateX(-50%) rotateX(-90deg) translateZ(30vw);
+}
+
+.stage .left {
+    transform: translateX(-50%) rotateY(-90deg) translateZ(30vw);
+}
+
+.stage .right {
+    transform: translateX(-50%) rotateY(90deg) translateZ(30vw);
+}
+
+article {
+    font-size: 1.2rem;
+    padding-top: 5vw;
+    height: auto;
+    min-height: 100vh;
+    position: absolute;
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.photobox {
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.stage {
+    width: 100%;
+}
+
+#about:target .cube {
+    animation-play-state: running;
+}
+
+.bonus-img {
+    margin-top: 5vh;
+    display: block;
+    width: 100%
+}
+
+#contact > div {
+    top: calc(4vh + 3.5em);
+}
+
+#apps {
+    display: block;
+}
+
+#apps > .sidebar {
+    display: none;
+}

@@ -1,0 +1,11 @@
+#kitten{
+    
+    background-image: url("../images/kitten.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    width: 100%;
+    font-size: 3rem;
+    background-position: center top;
+}

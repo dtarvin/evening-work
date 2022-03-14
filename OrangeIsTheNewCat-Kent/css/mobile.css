@@ -1,0 +1,19 @@
+#home {
+    background-image: url('../images/kitten-v.jpg');
+}
+
+#about {
+	background-image: url('../images/kitten-flying-v.jpg');
+}
+
+#contact-popup div {
+    flex-direction: column;
+}
+
+#pawprint {
+    display: none !important;
+}
+
+#schedule-popup {
+    width: 90vw;
+}

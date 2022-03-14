@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initia-scale=1.0"/>
+        <title>My website</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+        <link rel="stylesheet" href="standard.css"/>
+
+    </head>
+
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"><i class="fas fa-mobile-alt"></i>Minimalist Phones</a>
+
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="about.html" class="navbar__links">About us</a></li>
+                <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact</a></li>
+                <li class="navbar__btn"><a href="shop.html" class="button">Shop Now</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Article Section -->
+
+    <div class="contact__wrapper">
+
+        <div class="form__wrapper">
+        <h2> Contact Us</h2>
+            <form id="myform">
+                <div class="inputfield">
+                    <input type="text" placeholder="name" id="name">
+                </div>
+                <div class="inputfield">
+                    <input type="text" placeholder="subject" id="subject">
+                </div>
+                <div class="inputfield">
+                    <input type="text" placeholder="email" id="email">
+                </div>
+                <div class="inputfield">
+                    <input type="text" placeholder="phone number" id="phone number">
+                </div>
+                <div class="inputfield">
+                    <textarea type="text" placeholder="message" id="message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+<script src="app.js"></script>
+    </body>
+</html>

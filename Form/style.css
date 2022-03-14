@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("vector-speaker-1680x1050.jpg");
+    width: auto;
+    background-image: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+}
+
+fieldset {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    clear: left;
+}
+
+div {
+    width: 80%;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"]:not(old), 
+input[type="radio"]:not(old) {
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0;
+}
+
+.enterinfo {
+    float: left;
+    clear: left;
+    width: 100px;
+}
+
+input[type="checkbox"]:not(old) + label, 
+input[type="radio"]:not(old) + label {
+    display: inline-block;
+    margin-left: -2em;
+    line-height: 1.5;
+}
+
+input[type="checkbox"]:not(old) + label > span, 
+input[type="radio"]:not(old) + label > span {
+    display: inline-block;
+    width: 0.875em;
+    height: 0.875em;
+    margin: .25em 0.5em .25em .25em;
+    border: .0625em solid rgb(192, 192, 192);
+    border-radius: .25em;
+    background: rgb(224, 224, 224);
+    background-image: lineargradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    vertical-align: bottom;
+}
+
+input[type="checkbox"]:not(old) + label > span, 
+input[type="radio"]:not(old) + label > span {
+    background-image: linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+}
+
+input[type="checkbox"]:not(old):check + label + span::before {
+    content: "/2713";
+    display: block;
+    width: 1em;
+    color: rgb(153, 204, 102);
+    font-size: .875em;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 0 0 0.714em rgb(115, 153, 77);
+    font-weight: bold;
+}
+
+input[type="radio"]:not(old):checked + label > span > span {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.125em;
+    border: 0.0625em solid rgb(115, 153, 77);
+    border-radius: 0.125em;
+    background-color: rgb(153, 204, 102);
+    background-image: linear-gradient rgb(179, 217, 140), rgb(115, 153, 77)
+}

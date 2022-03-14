@@ -1,0 +1,132 @@
+12. Which of the following types of CSS styling will have the highest priority?
+	a. External style sheets
+	b. Internal style sheets
+	c. inline styling
+	d. Either a or b
+13. If the HTML document contains internal styling which is then followed by a link to an external style sheet, which styling will have priority?
+	a. the external style sheet
+	b. the internal styling
+14. How does a CSS comment begin?
+	a. <!--
+	b. //
+	c. /*
+	d. none of the above
+15. How does a CSS comment end?
+	a. -->
+	b. //
+	c. */
+	d. none of the above
+16. CSS comments may only be made as single-line comments.
+	a. true
+	b. false
+17. Which of the following is NOT a way to specify colors in CSS?
+	a. HSL
+	b. HEX
+	c. RBGA
+	d. name
+18. Which of the following properties and values are used in creating a parallax effect for a website?
+	a. background-image: fixed;
+	b. background-attachment: fixed;
+	c. background-position: fixed;
+	d. none of the above
+19. Which of the following properties has linear-gradient as a value?
+	a. background-color
+	b. background-image
+	c. background-repeat
+	d. both a and b
+20. Which of the following values for background-repeat will repeat a background image vertically and not horizontally?
+	a. repeat
+	b. repeat-x
+	c. repeat-vert
+	d. repeat-y
+21. Which of the following will position a background image in the bottom left corner of the browser?
+	a. background-position: left bottom;
+	b. background-position: left, bottom;
+	c. background-position: bottom left;
+	d. background-position: bottom, left;
+22. With regard to borders, which of the following does CSS let you specify?
+	a. color
+	b. width
+	c. style
+	d. all of the above
+23. Which of the following is not a value of the border-style property?
+	a. hidden
+	b. outset
+	c. groove
+	d. square
+24. Which of the following is not a valid value for the border-width property?
+	a. medium
+	b. em
+	c. pt
+	d. they are all valid
+25. What property is used to round the corners of a border?
+	a. border-corner
+	b. border-radius
+	c. border-rounding
+	d. none of the above
+26. What is the effect of the following property and value: margin: 10px 25px 20px; 
+	a. The top margin is 10px, the left margin is 25 px, the bottom margin is 20px and the right margin is 0 px
+	b. The right margin is 10px, the top and bottom margins are 25px, and the left margin is 20px
+	c. The top and bottom margins are 10px, the right margin is 25px, and the left margin is 20px
+	d. The top margin is 10px, the right and left margins are 25px, and the bottom margin is 20px
+27.  The margin value auto is used to horizontally center an element within its container
+	a. true
+	b. false
+28. The property maximum-width sets a maximum width on an element.
+	a. true
+	b. false
+29. The CSS Box Model includes which of the following?
+	a. margin
+	b. padding
+	c. borders
+	d. both a and b
+30. Which of the following is NOT a value of the text-align property?
+	a. left
+	b. right
+	c. middle
+	d. they are all values of text-align
+31. Which of the following is NOT a value of the vertical-align property?
+	a. text-top
+	b. super
+	c. middle
+	d. they are all values of vertical-align
+32. HTML anchor tags <a> are by default set to text-decoration: none.
+	a. true
+	b. false
+33. To use the text-shadow property, a horizontal shadow, a vertical shadow, a blur effect and a color are all required.
+	a. true
+	b. false
+34. There are four generic font families.
+	a. true
+	b. false
+35. A generic font-family should always be included as a fallback when setting the font-families for your website.
+	a. true
+	b. false
+36. Which of the following is NOT a value of the font-style property?
+	a. normal
+	b. italic
+	c. oblique
+	d. bold
+37. Images cannot be used as list item markers.
+	a. true
+	b. false
+38. Setting an element to display: none has the same effect as setting an element to visibility: hidden.
+	a. true
+	b. false
+39. The property z-index works on all elements in a web page.
+	a. true
+	b. false
+40. With z-index, a higher value is always stacked behind a lower value (i.e. an element with a z-index of 1 will be on top of an element with a z-index of 3).
+	a. true
+	b. false
+41. Which of the following is NOT a value of the CSS overflow property?
+	a. fixed
+	b. scroll
+	c. visible
+	d. hidden
+42. In a CSS selector block, a space between two element types represents what?
+	a. adjacent sibling selector
+	b. descendant selector
+	c. child selector
+	d. general sibling selector
+43. 

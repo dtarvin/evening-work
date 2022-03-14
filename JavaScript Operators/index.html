@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+
+    <script>
+        let x = 20;
+        let y = 10;
+        console.log('x + y =', x + y);
+        console.log('x - y = ', (x - y));
+        
+        function orderOfOperations() {
+            let x = 5;
+            let y = 7;
+            let z = 0;
+            let a = 4;
+            let answer = (x + y)- a * z;
+            console.log("The order of operations answer is " + answer);
+        }
+
+        orderOfOperations();
+
+        function incrementAndDecrement(num1, num2) {
+            let x = ++num1;
+            let y = num1++;
+            let z = --num2;
+            let a = num2--;
+            console.log('x = ' + x + 'y = ' + y + 'num1 = ' + num1);
+            console.log('z = ' + z + 'a = ' + a + 'num2 = ' + num2);
+        }
+        incrementAndDecrement(12, 23);
+
+        x = 5;
+        console.log('x == 5 is ' + (x == 5));
+        console.log('x == "5" is ' + (x == "5"));
+        console.log('x === 5 is ' + (x === 5));
+        console.log('x === "5" is ' + (x === "5"));
+        console.log('x is a number, "5" is a string, x !== "5" is ' + (x !== "5"));
+        console.log('x is a number, 5 is a number, x !== 5 is ' + (x !== 5));
+
+        let zombies = 23;
+        let tooManyZombies = (zombies < 20) ? "Thank goodness" : "AAAAAHHHHH ZOMBIES!!!!";
+        console.log(tooManyZombies);
+
+        let autoBotLeader = "Optimus";
+        let decepticonLeder = "Megatron";
+        if (autoBotLeader == "Rodimus" && decepticonLeader == "Megatron") {
+            console.log("These are the true leaders");
+        } else {
+            console.log("You got something wrong");
+            if (autoBotLeader != "Rodimus") {
+                console.log('You got the autobot leader wrong');
+            } else {
+                console.log('You got the decepticon leader wrong');
+            }
+        }
+
+        function isValidZipCode(zip) {
+            console.log('The zip code you gave me is ' + zip);
+            if (zip.length == 5 || zip.length == 9) {
+                console.log("You put in a good zip code");
+            } else {
+                console.log("You must enter a zip code of 5 or 9 digits");
+            }
+        }
+
+        isValidZipCode("68134");
+        isValidZipCode("681341325");
+        isValidZipCode("11");
+        isValidZipCode("902015");
+    </script>
+</body>
+</html>

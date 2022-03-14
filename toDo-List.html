@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #work {
+            width: 30%;
+            float: left;
+            display: inline-block;
+            min-height: 20vh;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+        #home {
+            width: 30%;
+            display: inline-block;
+            min-height: 20vh;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+
+        div {
+            margin: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .remove {
+            color: red;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="input">
+
+        <select name="choice" id="choice">
+            <option value="work">Work</option>
+            <option value="home">Home</option>
+        </select>
+
+        <button id="add">Add</button>
+    </div>
+
+    <div id="work">
+        <h1>Work</h1>
+    </div>
+
+    <div id="home">
+        <h1>Home</h1>
+    </div>
+
+    <script>
+        $(function() {
+            $("#add").click(function() {
+                let taskDesc = $("#input").val();
+                if (taskDesc == "") {
+                    $(".container").append("<div><span class='mustAdd'>You must input a task to add.</span></div>");
+                } else {
+                    $(".mustAdd").remove();
+                    addTaskDesc(taskDesc);
+                }
+            });
+
+            $("body").on("click", ".remove", function(){
+                // var delTask = $(this).prev().text();
+                $(this).parent().remove();
+            });
+
+            $("#input").keypress(function() {
+                if (event.which == 13) {
+                    let taskDesc = $("#input").val();
+                    if (taskDesc == "") {
+                        $(".container").append("<div><span class='mustAdd'>You must input a task to add.</span></div>");
+                    } else {
+                        $(".mustAdd").remove();
+                        addTaskDesc(taskDesc);
+                }
+                }
+            });
+
+            function addTaskDesc(taskDesc) {
+                var choice=$("select").val();
+                $("#"+choice).append("<div class='task'><span class='desc'>" + taskDesc + "</span><span class='remove'> X</span></div>");
+                $("input").val('');
+            }
+        });
+    </script>
+</body>
+</html>
